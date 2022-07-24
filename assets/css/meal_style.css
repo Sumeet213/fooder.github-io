@@ -1,0 +1,86 @@
+/* begining of meal-box */
+.header {
+   
+    width:100%;
+    background-color: rgba(0,0,0, .2);
+
+}
+
+.header ul {
+    text-align: center;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+.header ul li a {
+    font-family: 'Source Sans Pro' ,sans-serif;
+    display:block;
+    text-decoration:none;
+    font-size:20px;
+    color: rgba(179, 240, 255, 0.993);
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+    padding:40px;
+    transition: all ease 0.5s;
+
+
+}
+
+.header ul li a:hover {
+    background-color:green;
+}
+
+
+body {
+    background:url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height:100vh;
+    background-position: left;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+#meal-box {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* end of meal-box */
+
+/* begining of meal-details */
+
+#meal-details {
+    width: 60vw;
+    margin-left: 50px;
+    text-align: justify;
+    margin-top: -1rem;
+}
+
+/* image inside the meal-details div */
+
+#meal-image img {
+    height: 300px;
+    width: 250px;
+    border-radius: 0.5rem;
+}
+
+/* end of image */
+
+/* the meal-name div */
+
+#meal-name {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/* end of meal-name */
+
+/*end of meal-details */
