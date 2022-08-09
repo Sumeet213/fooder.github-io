@@ -50,7 +50,7 @@ function createFood(res) {
 
 document.body.addEventListener('click', function (event) {
 
-    if (event.target.getAttribute('class') == 'fav-button') {
+    if (event.target.getAttribute('class') == 'favourite-button') {
         let id = event.target.getAttribute('id');
         let index = item.indexOf(id);
         item.splice(index, 1);
