@@ -13,7 +13,7 @@ for (let id of item) {
 //this function fetches a meal with a specific id
 function getMealItem(id) {
 
-    var xhrRequest = new XMLHttpRequest(); 
+    var xhrRequest = new XMLHttpRequest();
     xhrRequest.onload = function () {
         let res = JSON.parse(xhrRequest.response).meals[0]; //parsing resultant food item retrned
         createFood(res); //creating the new item's HTML
@@ -36,7 +36,7 @@ function createFood(res) {
                             <div class="get-recipie">
                                 <a href="meal_details.html?id=${res.idMeal}" value="${res.idMeal}">Get Recipie</a>
                             </div>
-                            <div class="fav-button" id="${res.idMeal}">
+                            <div class="favourite-button" id="${res.idMeal}">
                                 Remove Favourite
                             </div>
                         </div>
@@ -49,7 +49,7 @@ function createFood(res) {
 
 
 document.body.addEventListener('click', function (event) {
-    
+
     if (event.target.getAttribute('class') == 'fav-button') {
         let id = event.target.getAttribute('id');
         let index = item.indexOf(id);
@@ -58,9 +58,9 @@ document.body.addEventListener('click', function (event) {
         for (let i of item) {
             items = items + ' ' + i;
         }
-      
+
         window.localStorage.setItem('meal-favurites', items);
-     
+
         location.reload();
     }
 });
